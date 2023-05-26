@@ -1,4 +1,4 @@
-#include <iostream>
+п»ї#include <iostream>
 #include<string>
 
 class Tovar
@@ -6,15 +6,15 @@ class Tovar
 private:
 	std::string _name;
 	float _price;
-public: // Это метод
+public: // Р­С‚Рѕ РјРµС‚РѕРґ
 
-	//Другой способ   Один обект
-	Tovar(std::string name, float price) // Это конструктор он должен быть всегда в поле public: публичном 
+	//Р”СЂСѓРіРѕР№ СЃРїРѕСЃРѕР±   РћРґРёРЅ РѕР±РµРєС‚
+	Tovar(std::string name, float price) // Р­С‚Рѕ РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ РѕРЅ РґРѕР»Р¶РµРЅ Р±С‹С‚СЊ РІСЃРµРіРґР° РІ РїРѕР»Рµ public: РїСѓР±Р»РёС‡РЅРѕРј 
 	{
 		_name = name;
 		_price = price;
 	}
-	// Другой способ
+	// Р”СЂСѓРіРѕР№ СЃРїРѕСЃРѕР±
 	void Print()
 	{
 		std::cout << "Name " << _name << '\n';
@@ -79,16 +79,16 @@ public:
 int main() {
 
 
-	// Один обект
+	// РћРґРёРЅ РѕР±РµРєС‚
 	/*Tovar tovar1("Morkov", (99.99F));
 	tovar1.Print();*/
 
-	// Несколько объектов
+	// РќРµСЃРєРѕР»СЊРєРѕ РѕР±СЉРµРєС‚РѕРІ
 	Tovar tovar1("Morkov", (99.99F));
 	Tovar tovar2("Kapusta", (500.4F));
 	Tovar tovar3("Kartoshka", (200.1F));
 
-	Tovar* tovar4 = new  Tovar("Bread", 25.6f); // Помещаем в указатель сам класс
+	Tovar* tovar4 = new  Tovar("Bread", 25.6f); // РџРѕРјРµС‰Р°РµРј РІ СѓРєР°Р·Р°С‚РµР»СЊ СЃР°Рј РєР»Р°СЃСЃ
 	
 	tovar1.Print();
 	tovar2.Print();
@@ -113,7 +113,7 @@ int main() {
 	emploise3.Print();
 	tovar4->Print();
 
-	delete(tovar4); //Закрфыли область памяти
+	delete(tovar4); //Р—Р°РєСЂС„С‹Р»Рё РѕР±Р»Р°СЃС‚СЊ РїР°РјСЏС‚Рё
 		
 
 	return 0;
